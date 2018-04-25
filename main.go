@@ -40,7 +40,7 @@ func main() {
 
 	total := ""
 	for scanner.Scan() {
-		total += scanner.Text()
+		total += scanner.Text() + "\n"
 	}
 	total += "\n"
 
