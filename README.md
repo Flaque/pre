@@ -11,7 +11,17 @@ $ sed -i.old '1s;^;to be prepended;' inFile
 But now you can just do it with `pre`:
 
 ```bash 
-$ echo "some text in front" | pre someFile.txt | tee someFile.txt
+$ echo "some text in front" | pre someFile.txt | sponge someFile.txt
+```
+
+If you don't have sponge, you can get it from `moreutils`:
+
+```
+# mac
+brew install moreutils
+
+# ubuntu/linux
+apt-get install moreutils
 ```
 
 ## Install 
