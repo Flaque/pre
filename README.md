@@ -11,6 +11,13 @@ $ sed -i.old '1s;^;to be prepended;' inFile
 But now you can just do it with `pre`:
 
 ```bash 
-$ echo "some text in front" | pre someFile.txt 
+$ echo "some text in front" | pre someFile.txt | tee someFile.txt
 ```
 
+## Install 
+
+If you have go, you can install this with:
+
+```
+go get -u github.com/Flaque/pre
+```
